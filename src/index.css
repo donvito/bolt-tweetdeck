@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-pink-50 text-gray-900 antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-pink-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-pink-200 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-pink-300;
+}
+
+.tweet-action-button {
+  @apply flex items-center gap-2 text-gray-600 transition-all duration-200 rounded-full px-2 py-1;
+}
+
+.tweet-action-button:hover {
+  @apply text-pink-500 bg-pink-50;
+}
+
+.tweet-action-button.retweet:hover {
+  @apply text-pink-500 bg-pink-50;
+}
+
+.tweet-action-button.like:hover {
+  @apply text-pink-500 bg-pink-50;
+}
+
+.sidebar-item {
+  @apply w-full flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-pink-100 rounded-xl transition-all duration-200;
+}
+
+.sidebar-item:hover {
+  @apply text-pink-600 transform scale-[1.02];
+}
+
+.column-header {
+  @apply sticky top-0 backdrop-blur-md bg-white/90 z-10 border-b border-pink-100;
+}
